@@ -32,9 +32,8 @@ public class MailBoxTest {
         enterMailBox.click();
 
         WebElement loginField = driver.findElement(By.name("login"));
-        if (loginField.isDisplayed()) {
-            loginField.sendKeys("stellapolare5922");
-        }
+        loginField.sendKeys("stellapolare5922");
+        
         WebElement loginButton = driver.findElement(By.xpath("//button[@type='submit']"));
         loginButton.click();
 
